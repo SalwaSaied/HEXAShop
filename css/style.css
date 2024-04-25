@@ -1,0 +1,220 @@
+html {
+    scroll-behavior: smooth;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    flex-wrap: wrap;
+  
+}
+:root {
+    --maincolor:#6c757d;
+    --subcolor: #343a40;
+    --subcolor: #fff;
+    
+}
+
+body {
+   
+    background-color: #fff;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 16px;
+    color: #343a40;
+    -webkit-font-smoothing: antialiased;
+}
+*, ::after, ::before {
+    box-sizing: border-box;
+}
+*, ::after, ::before {
+    box-sizing: border-box;
+}
+
+::selection {
+    background: #2a2a2a;
+    color: #fff;
+}
+/* Header */
+.container {
+    width: 80%;
+    margin: auto;
+    
+}
+.header-area.header-sticky {
+    min-height: 80px;
+}
+.header-area {
+    border-bottom: 3px dotted #eee;
+    box-shadow: none;
+    background-color: #fff;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    z-index: 100;
+    height: 100px;
+    -webkit-transition: all .5s ease 0s;
+    -moz-transition: all .5s ease 0s;
+    -o-transition: all .5s ease 0s;
+    transition: all .5s ease 0s;
+}
+header, nav, section, article, aside, footer, hgroup {
+    display: block;
+}
+.row {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+}
+.col-12 {
+    -ms-flex: 0 0 100%;
+    flex: 0 0 100%;
+    max-width: 100%;
+}
+.header-area .main-nav {
+    min-height: 80px;
+    background: transparent;
+}
+.header-area .main-nav .logo {
+    line-height: 100px;
+    font-weight: 700;
+    margin-top: 10px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    float: left;
+    -webkit-transition: all 0.3s ease 0s;
+    -moz-transition: all 0.3s ease 0s;
+    -o-transition: all 0.3s ease 0s;
+    transition: all 0.3s ease 0s;
+}
+a {
+    text-decoration: none !important;
+}
+@media (min-width: 767px){
+.header-area .main-nav .nav {
+    display: flex !important;
+}
+}
+.header-area .main-nav .nav {
+    float: right;
+    margin-top: 30px;
+    margin-right: 60px;
+    background-color: transparent;
+    color: #2a2a2a;
+    font-size:18px; 
+    -webkit-transition: all 0.3s ease 0s;
+    -moz-transition: all 0.3s ease 0s;
+    -o-transition: all 0.3s ease 0s;
+    transition: all 0.3s ease 0s;
+    position: relative;
+    z-index: 999;
+}
+
+.nav {
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    padding-left: 0;
+    margin-bottom: 0;
+    list-style: none;
+   
+}
+ul {
+    margin-bottom: 0px;
+}
+ul, li {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+@media (max-width: 992px){
+.header-area .main-nav .nav li {
+    padding-right: 5px;
+    padding-left: 5px;
+}}
+
+@media (max-width: 1200px){
+.header-area .main-nav .nav li {
+    padding-left: 12px;
+    padding-right: 12px;
+}}
+
+.header-area .main-nav .nav li {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+/*  */
+.items{
+    width: 100%;
+    margin-right: 30px;
+    padding-top: 50px;
+    display: grid;
+    grid-template-columns: auto auto auto ;
+    gap: 10px;
+    padding-top:-100px ;
+    margin-top: 50px;
+
+
+}
+.items .item{
+    position: relative;
+    justify-content: center;
+
+}
+
+.items .item .thumb img{
+    opacity: 1;
+    display: block;
+    width: 100%;
+    height: auto;
+    transition: .5s ease;
+    backface-visibility: hidden;
+    border-radius: 50%;
+
+}
+
+.middle{
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    cursor: pointer;
+    text-align: center;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%)
+}
+.item:hover .thumb {
+    opacity: 0.3;
+    cursor: pointer;
+}
+.item:hover .middle {
+    opacity: 1;
+  }
+
+.cart{
+    float: left;
+    width: 100%;
+    margin: auto;
+    margin-top: 40px;
+    margin-bottom: 30px;
+    background-color: #fcdfdf;
+    color: #6b1212dc;
+    font-size:18px; 
+
+}
+.cart h2{
+    text-align: center;
+    text-decoration: underline;
+}
+#showPrice{
+    margin-top: 30px;
+    margin: auto;
+    
+
+}
